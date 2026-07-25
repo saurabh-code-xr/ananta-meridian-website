@@ -803,31 +803,35 @@
         Technical and commercial details available under controlled discussion. We welcome qualified conversations with practitioners, operators, and institutions.
       </p>
 
-      <div class="contact-form">
+      <form class="contact-form" id="contact-form">
+        <input type="hidden" name="access_key" value="6d389a3a-09e0-4a0d-a31e-f9a7ba098f2a">
+        <input type="hidden" name="subject" value="New enquiry — Ananta Meridian website">
+        <input type="checkbox" name="botcheck" class="hidden" style="display:none;" tabindex="-1" autocomplete="off">
+
         <div class="form-row">
           <div class="form-group">
             <label class="form-label" for="fname">First Name</label>
-            <input class="form-input" type="text" id="fname" placeholder="First name" autocomplete="given-name">
+            <input class="form-input" type="text" id="fname" name="first_name" placeholder="First name" autocomplete="given-name" required>
           </div>
           <div class="form-group">
             <label class="form-label" for="lname">Last Name</label>
-            <input class="form-input" type="text" id="lname" placeholder="Last name" autocomplete="family-name">
+            <input class="form-input" type="text" id="lname" name="last_name" placeholder="Last name" autocomplete="family-name" required>
           </div>
         </div>
 
         <div class="form-group">
           <label class="form-label" for="org">Organisation</label>
-          <input class="form-input" type="text" id="org" placeholder="Organisation or institution" autocomplete="organization">
+          <input class="form-input" type="text" id="org" name="organisation" placeholder="Organisation or institution" autocomplete="organization">
         </div>
 
         <div class="form-group">
           <label class="form-label" for="email">Email</label>
-          <input class="form-input" type="email" id="email" placeholder="your@email.com" autocomplete="email">
+          <input class="form-input" type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email" required>
         </div>
 
         <div class="form-group">
           <label class="form-label" for="interest">Nature of enquiry</label>
-          <select class="form-select" id="interest">
+          <select class="form-select" id="interest" name="enquiry_type">
             <option value="" disabled selected>Select an area</option>
             <option>Evaluate a Capability</option>
             <option>Bring a Technology to Canada</option>
@@ -839,7 +843,7 @@
 
         <div class="form-group">
           <label class="form-label" for="message">Brief context</label>
-          <textarea class="form-textarea" id="message" placeholder="Briefly describe the operational challenge or opportunity you'd like to discuss."></textarea>
+          <textarea class="form-textarea" id="message" name="message" placeholder="Briefly describe the operational challenge or opportunity you'd like to discuss." required></textarea>
         </div>
 
         <p class="form-note">
@@ -849,7 +853,7 @@
         <button class="btn btn--primary btn--form" type="submit">
           Send Enquiry
         </button>
-      </div>
+      </form>
     </div>
   </div>
 </section>
