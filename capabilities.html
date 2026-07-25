@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The Ananta Meridian capability model — Sense, Understand, Decide, Act. How we build trusted sensing and confidence-aware decisions for mission-critical environments.">
+<title>Capabilities — Ananta Meridian</title>
+<link rel="icon" type="image/svg+xml" href="assets/images/ananta-logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav id="nav" class="solid">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <svg class="nav-logo-mark" viewBox="100 10 320 185" width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="nwG" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color:#C8CDD6"/>
+              <stop offset="30%" style="stop-color:#EAEDF2"/>
+              <stop offset="65%" style="stop-color:#8A95A5"/>
+              <stop offset="100%" style="stop-color:#3A4455"/>
+            </linearGradient>
+            <linearGradient id="nwD" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color:#2A3344"/>
+              <stop offset="100%" style="stop-color:#111820"/>
+            </linearGradient>
+            <linearGradient id="naG" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color:#FFFFFF"/>
+              <stop offset="100%" style="stop-color:#D0D8E4"/>
+            </linearGradient>
+            <mask id="naM">
+              <rect width="520" height="310" fill="black"/>
+              <polygon points="260,12 142,172 170,172 260,46 350,172 378,172" fill="white"/>
+              <polygon points="260,54 196,162 210,162 260,76 310,162 324,162" fill="black"/>
+              <rect x="200" y="126" width="34" height="19" fill="black"/>
+              <rect x="286" y="126" width="34" height="19" fill="black"/>
+            </mask>
+          </defs>
+          <rect x="142" y="12" width="236" height="160" fill="url(#naG)" mask="url(#naM)"/>
+          <path d="M242,142 L30,166 L74,182 L242,160 Z" fill="url(#nwG)"/>
+          <path d="M242,156 L74,174 L88,182 L242,166 Z" fill="url(#nwD)"/>
+          <path d="M278,142 L490,166 L446,182 L278,160 Z" fill="url(#nwG)"/>
+          <path d="M278,156 L446,174 L432,182 L278,166 Z" fill="url(#nwD)"/>
+          <path d="M240,158 L260,184 L280,158 L260,169 Z" fill="url(#nwG)"/>
+          <path d="M242,162 L260,182 L278,162 L260,172 Z" fill="url(#nwD)"/>
+          <g transform="translate(260,112)">
+            <path d="M0,-22 L3.5,-14 L8,-17 L6,-10 L14,-9 L9,-4 L19,0 L12,4 L15,11 L7,8 L6,19 L0,15 L-6,19 L-7,8 L-15,11 L-12,4 L-19,0 L-9,-4 L-14,-9 L-6,-10 L-8,-17 L-3.5,-14 Z" fill="#D92332"/>
+            <rect x="-2.2" y="15" width="4.4" height="9" rx="1.5" fill="#C53030"/>
+          </g>
+        </svg>
+      <div>
+        <span class="nav-logo-text">ANANTA</span>
+        <span class="nav-logo-meridian">MERIDIAN</span>
+        <span class="nav-logo-sub">AUTONOMOUS SYSTEMS</span>
+      </div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="capabilities.html" class="active">Capabilities</a></li>
+      <li><a href="solutions.html">Solutions</a></li>
+      <li><a href="technology.html">Technology</a></li>
+      <li><a href="company.html">Company</a></li>
+      <li><a href="careers.html">Careers</a></li>
+    </ul>
+
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn--ghost">Partner With Us</a>
+      <a href="contact.html" class="btn btn--primary">Contact</a>
+    </div>
+
+    <button class="nav-mobile-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="nav-mobile-panel">
+    <ul class="nav-mobile-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="capabilities.html">Capabilities</a></li>
+      <li><a href="solutions.html">Solutions</a></li>
+      <li><a href="technology.html">Technology</a></li>
+      <li><a href="company.html">Company</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-mobile-cta">
+      <a href="contact.html" class="btn btn--ghost btn--large">Partner With Us</a>
+      <a href="contact.html" class="btn btn--primary btn--large">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================================
+     PAGE HERO
+     ============================================================ -->
+<section id="page-hero">
+  <div class="page-hero-bg-text" aria-hidden="true">SENSE</div>
+  <div class="container">
+    <div class="page-hero-eyebrow reveal">
+      <div class="page-hero-eyebrow-line"></div>
+      <span class="t-label">Capability Model</span>
+    </div>
+    <h1 class="t-h1 page-hero-headline reveal reveal-delay-1">
+      Sense. Understand.<br>Decide. Act.
+    </h1>
+    <p class="page-hero-sub reveal reveal-delay-2">
+      Effective autonomy begins long before a platform moves. It begins with trusted sensing, resilient data, and clear human decisions. This is the framework behind every system we integrate.
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================
+     01 — SENSE
+     ============================================================ -->
+<section class="section-pad">
+  <div class="container">
+    <div class="two-col">
+      <div class="reveal">
+        <span class="capability-number" style="font-size:12px;">01 / SENSE</span>
+        <h2 class="t-h2" style="margin:16px 0 20px;">Detect signals others miss.</h2>
+        <p class="t-body" style="margin-bottom:16px;">
+          Modern environments speak constantly — acoustic, RF, optical, infrared, radar, sonar, satellite. The mission starts with capturing those signals reliably, including in degraded, contested, and environmentally stressed conditions where active systems can't be relied on alone.
+        </p>
+        <p class="t-body">
+          We integrate layered sensing so no single input is a point of failure — passive detection that adds no active emission, paired with optical and RF coverage for a fuller picture.
+        </p>
+        <div class="pill-list">
+          <span class="pill">Passive Acoustic Early Warning</span>
+          <span class="pill">RF Spectrum Monitoring</span>
+          <span class="pill">Multi-Spectral EO/IR</span>
+          <span class="pill">AIS Maritime Tracking</span>
+          <span class="pill">Space-Enabled Awareness</span>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2" style="display:flex;align-items:center;justify-content:center;">
+        <svg viewBox="0 0 200 200" width="220" height="220" fill="none" xmlns="http://www.w3.org/2000/svg" style="color:var(--am-cyan);">
+          <circle cx="100" cy="100" r="8" fill="currentColor" opacity="0.85"/>
+          <circle cx="100" cy="100" r="34" stroke="currentColor" stroke-width="1" fill="none" opacity="0.5"/>
+          <circle cx="100" cy="100" r="62" stroke="currentColor" stroke-width="0.75" fill="none" opacity="0.32"/>
+          <circle cx="100" cy="100" r="92" stroke="currentColor" stroke-width="0.5" fill="none" opacity="0.16"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     02 — UNDERSTAND
+     ============================================================ -->
+<section class="section-pad section-band">
+  <div class="container">
+    <div class="two-col">
+      <div class="reveal reveal-delay-2" style="order:2;display:flex;align-items:center;justify-content:center;">
+        <svg viewBox="0 0 200 200" width="220" height="220" fill="none" xmlns="http://www.w3.org/2000/svg" style="color:var(--am-cyan);">
+          <rect x="20" y="140" width="26" height="40" fill="currentColor" opacity="0.3"/>
+          <rect x="62" y="100" width="26" height="80" fill="currentColor" opacity="0.5"/>
+          <rect x="104" y="60" width="26" height="120" fill="currentColor" opacity="0.7"/>
+          <rect x="146" y="30" width="26" height="150" fill="currentColor" opacity="0.9"/>
+          <polyline points="33,140 75,100 117,60 159,30" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.6"/>
+        </svg>
+      </div>
+      <div class="reveal" style="order:1;">
+        <span class="capability-number" style="font-size:12px;">02 / UNDERSTAND</span>
+        <h2 class="t-h2" style="margin:16px 0 20px;">Turn signals into situational understanding.</h2>
+        <p class="t-body" style="margin-bottom:16px;">
+          Raw sensor data is not understanding. We process, classify, and fuse heterogeneous inputs at the edge — producing reliable situational understanding even when individual sensors are degraded, stale, or conflicting.
+        </p>
+        <p class="t-body">
+          This is where our own sensor fusion IP does its work: weighting inputs by quality and freshness, tracking per-sensor reliability over time, and flagging inputs that look spoofed or miscalibrated.
+        </p>
+        <div class="pill-list">
+          <span class="pill">Confidence-Aware Sensor Fusion</span>
+          <span class="pill">Edge AI Classification</span>
+          <span class="pill">Reliability-Weighted Processing</span>
+          <span class="pill">Degraded Environment Operation</span>
+          <span class="pill">Digital Twin Integration</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     03 — DECIDE
+     ============================================================ -->
+<section class="section-pad">
+  <div class="container">
+    <div class="two-col">
+      <div class="reveal">
+        <span class="capability-number" style="font-size:12px;">03 / DECIDE</span>
+        <h2 class="t-h2" style="margin:16px 0 20px;">Give operators clarity, not noise.</h2>
+        <p class="t-body" style="margin-bottom:16px;">
+          Understanding only matters if it reaches the person who has to act on it. We surface clear, confidence-weighted outputs — HIGH, MEDIUM, or LOW — with recommended operator actions, so decisions get faster and more consistent, not slower.
+        </p>
+        <p class="t-body">
+          Outputs route into existing command and control workflows, so alerting and escalation fit the way operations centres already work.
+        </p>
+        <div class="pill-list">
+          <span class="pill">HIGH / MEDIUM / LOW Confidence</span>
+          <span class="pill">Recommended Operator Actions</span>
+          <span class="pill">C2 Cueing &amp; Handoff</span>
+          <span class="pill">Alert Routing &amp; Escalation</span>
+          <span class="pill">Watch-Floor Integration</span>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2" style="display:flex;align-items:center;justify-content:center;">
+        <svg viewBox="0 0 200 200" width="220" height="220" fill="none" xmlns="http://www.w3.org/2000/svg" style="color:var(--am-cyan);">
+          <circle cx="100" cy="100" r="60" stroke="currentColor" stroke-width="1" fill="none" opacity="0.4"/>
+          <circle cx="100" cy="100" r="20" fill="currentColor" opacity="0.9"/>
+          <line x1="100" y1="20" x2="100" y2="40" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+          <line x1="100" y1="160" x2="100" y2="180" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+          <line x1="20" y1="100" x2="40" y2="100" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+          <line x1="160" y1="100" x2="180" y2="100" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+          <circle cx="100" cy="100" r="20" fill="#D92332" opacity="0.8"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     04 — ACT
+     ============================================================ -->
+<section class="section-pad section-band">
+  <div class="container">
+    <div class="two-col">
+      <div class="reveal reveal-delay-2" style="order:2;display:flex;align-items:center;justify-content:center;">
+        <svg viewBox="0 0 200 200" width="220" height="220" fill="none" xmlns="http://www.w3.org/2000/svg" style="color:var(--am-cyan);">
+          <polygon points="40,160 100,40 160,160" stroke="currentColor" stroke-width="1" fill="none" opacity="0.5"/>
+          <polygon points="60,160 100,70 140,160" fill="currentColor" opacity="0.3"/>
+          <line x1="20" y1="150" x2="50" y2="150" stroke="currentColor" stroke-width="1" opacity="0.6"/>
+          <line x1="150" y1="150" x2="180" y2="150" stroke="currentColor" stroke-width="1" opacity="0.6"/>
+        </svg>
+      </div>
+      <div class="reveal" style="order:1;">
+        <span class="capability-number" style="font-size:12px;">04 / ACT</span>
+        <h2 class="t-h2" style="margin:16px 0 20px;">Deploy platforms configured for the mission.</h2>
+        <p class="t-body" style="margin-bottom:16px;">
+          Once sensing, understanding, and decisions are trustworthy, autonomous platforms can act on them — air, surface, and ground systems configured for ISR, monitoring, inspection, and detection across complex environments.
+        </p>
+        <p class="t-body">
+          Platform selection is driven by mission need, not catalogue — micro ISR through to persistent fixed-wing and counter-UAS response, sourced from allied OEM partners and configured for the operating environment.
+        </p>
+        <div class="pill-list">
+          <span class="pill">Micro &amp; Tactical ISR UAVs</span>
+          <span class="pill">Persistent Fixed-Wing Platforms</span>
+          <span class="pill">Counter-UAS Interceptors</span>
+          <span class="pill">Jam-Proof Fiber-Optic Tethered ISR</span>
+          <span class="pill">Heavy-Lift Payload Platforms</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA
+     ============================================================ -->
+<section id="contact">
+  <div class="contact-glow"></div>
+  <div class="container">
+    <div class="contact-content reveal">
+      <span class="signal-line" style="margin:0 auto 16px;"></span>
+      <p class="t-label" style="margin-bottom:12px;">See It Applied</p>
+      <h2 class="t-h2" style="margin-bottom:16px;">
+        The capability model in your operating domain.
+      </h2>
+      <p class="t-body" style="margin-bottom:32px;">
+        See how Sense, Understand, Decide, Act apply across air, maritime, Arctic, and critical-infrastructure missions, or discuss a specific requirement directly.
+      </p>
+      <div class="hero-actions" style="justify-content:center;">
+        <a href="solutions.html" class="btn btn--primary btn--large">Explore Operating Domains</a>
+        <a href="contact.html" class="btn btn--ghost btn--large">Start a Conversation</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-legal">© 2026 Ananta Meridian Inc.</span>
+        <div class="footer-divider"></div>
+        <span class="footer-cgp">CGP Registered</span>
+        <div class="footer-divider"></div>
+        <span class="footer-legal">Toronto, Canada</span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="capabilities.html">Capabilities</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="technology.html">Technology</a>
+        <a href="company.html">Company</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="footer-tagline">
+        Autonomous Systems · Defending Sovereignty · Securing the Future
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

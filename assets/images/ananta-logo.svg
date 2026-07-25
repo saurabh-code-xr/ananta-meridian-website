@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 310" width="520" height="310">
+  <defs>
+    <linearGradient id="wingGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#C8CDD6"/>
+      <stop offset="30%" style="stop-color:#EAEDF2"/>
+      <stop offset="65%" style="stop-color:#8A95A5"/>
+      <stop offset="100%" style="stop-color:#3A4455"/>
+    </linearGradient>
+    <linearGradient id="wingGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#9AA5B4"/>
+      <stop offset="50%" style="stop-color:#D0D5DC"/>
+      <stop offset="100%" style="stop-color:#606B7A"/>
+    </linearGradient>
+    <linearGradient id="wingDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2A3344"/>
+      <stop offset="100%" style="stop-color:#111820"/>
+    </linearGradient>
+    <linearGradient id="aGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF"/>
+      <stop offset="100%" style="stop-color:#D0D8E4"/>
+    </linearGradient>
+    <mask id="aMask">
+      <rect width="520" height="310" fill="black"/>
+      <polygon points="260,12 142,172 170,172 260,46 350,172 378,172" fill="white"/>
+      <polygon points="260,54 196,162 210,162 260,76 310,162 324,162" fill="black"/>
+      <rect x="200" y="126" width="34" height="19" fill="black"/>
+      <rect x="286" y="126" width="34" height="19" fill="black"/>
+    </mask>
+  </defs>
+
+  <!-- ── A FORM ── -->
+  <rect x="142" y="12" width="236" height="160" fill="url(#aGrad)" mask="url(#aMask)"/>
+
+  <!-- ── WINGS ── -->
+  <path d="M242,142 L30,166 L74,182 L242,160 Z" fill="url(#wingGrad)"/>
+  <path d="M242,156 L74,174 L88,182 L242,166 Z" fill="url(#wingDark)"/>
+  <path d="M30,166 L4,172 L30,180 L74,182 Z" fill="url(#wingGrad2)" opacity="0.8"/>
+  <path d="M278,142 L490,166 L446,182 L278,160 Z" fill="url(#wingGrad)"/>
+  <path d="M278,156 L446,174 L432,182 L278,166 Z" fill="url(#wingDark)"/>
+  <path d="M490,166 L516,172 L490,180 L446,182 Z" fill="url(#wingGrad2)" opacity="0.8"/>
+
+  <!-- Wing base horizontal bar -->
+  <rect x="142" y="168" width="236" height="3" fill="url(#wingGrad)" opacity="0.5"/>
+
+  <!-- Center V -->
+  <path d="M240,158 L260,184 L280,158 L260,169 Z" fill="url(#wingGrad)"/>
+  <path d="M242,162 L260,182 L278,162 L260,172 Z" fill="url(#wingDark)"/>
+
+  <!-- ── MAPLE LEAF — proper 11-point Canadian maple leaf path ── -->
+  <g transform="translate(260,112)">
+    <path d="
+      M 0,-22
+      L 3.5,-14
+      L 8,-17
+      L 6,-10
+      L 14,-9
+      L 9,-4
+      L 19,0
+      L 12,4
+      L 15,11
+      L 7,8
+      L 6,19
+      L 0,15
+      L -6,19
+      L -7,8
+      L -15,11
+      L -12,4
+      L -19,0
+      L -9,-4
+      L -14,-9
+      L -6,-10
+      L -8,-17
+      L -3.5,-14
+      Z
+    " fill="#D92332"/>
+    <!-- Stem -->
+    <rect x="-2.2" y="15" width="4.4" height="9" rx="1.5" fill="#C53030"/>
+  </g>
+
+  <!-- ── TYPOGRAPHY ── -->
+  <text x="260" y="220"
+    text-anchor="middle"
+    font-family="Arial Black, Arial, sans-serif"
+    font-size="56"
+    font-weight="900"
+    letter-spacing="14"
+    fill="#F5F7FA">ANANTA</text>
+
+  <!-- Red flanking lines -->
+  <rect x="92" y="231" width="52" height="2" fill="#D92332"/>
+  <rect x="376" y="231" width="52" height="2" fill="#D92332"/>
+
+  <!-- MERIDIAN -->
+  <text x="260" y="248"
+    text-anchor="middle"
+    font-family="Arial, sans-serif"
+    font-size="27"
+    font-weight="400"
+    letter-spacing="17"
+    fill="#F0F2F5">MERIDIAN</text>
+
+  <!-- Tagline -->
+  <text x="260" y="276"
+    text-anchor="middle"
+    font-family="Arial, sans-serif"
+    font-size="8"
+    font-weight="400"
+    letter-spacing="2.5"
+    fill="#98A3B3">AUTONOMOUS SYSTEMS  •  DEFENDING SOVEREIGNTY  •  SECURING THE FUTURE</text>
+
+  <!-- Bottom arc -->
+  <path d="M 115 286 Q 260 304 405 286"
+    stroke="#D92332" stroke-width="1.2" fill="none" opacity="0.65"/>
+</svg>
