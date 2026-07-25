@@ -1084,6 +1084,57 @@ section { position: relative; }
 }
 
 /* ============================================================
+   PHOTO OVERLAY — shared dark treatment for background photos.
+   Same stack as the hero video: dark gradient + cold blue grade,
+   so text sitting on a photo stays legible everywhere it's used.
+   ============================================================ */
+.has-photo {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.has-photo::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background:
+    linear-gradient(180deg, rgba(7,11,16,0.25) 0%, rgba(7,11,16,0.88) 100%),
+    rgba(7,24,46,0.28);
+  background-blend-mode: normal, multiply;
+  pointer-events: none;
+}
+
+.has-photo > * {
+  position: relative;
+  z-index: 1;
+}
+
+.domain-card::after { z-index: 2; }
+
+.domain-photo-panel {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  min-height: 280px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid var(--am-border);
+}
+
+.domain-photo-panel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: 20px 24px;
+}
+
+/* ============================================================
    CANADIAN SECTION
    ============================================================ */
 #canada {
