@@ -213,6 +213,9 @@ section { position: relative; }
   margin-top: 2px;
   position: relative;
   padding: 0 10px;
+  /* centre the word between the two dashes; text-indent cancels the trailing letter-spacing */
+  text-align: center;
+  text-indent: 0.26em;
 }
 
 .nav-logo-meridian::before,
