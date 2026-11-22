@@ -1886,3 +1886,14 @@ section { position: relative; }
 .hero-envs { display: flex; flex-wrap: wrap; gap: 14px 32px; list-style: none; padding: 0; margin: 40px 0 0; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--am-steel); }
 .hero-envs li { display: flex; align-items: center; gap: 10px; }
 .hero-envs svg { color: var(--am-cyan); flex-shrink: 0; }
+
+/* Vision illustration with live labels */
+.vision-visual { position: relative; border: 1px solid var(--am-border); border-radius: 4px; overflow: hidden; background: #05090f; }
+.vision-visual img { display: block; width: 100%; height: auto; }
+.vl-line { position: absolute; height: 1px; background: rgba(169,217,255,0.35); transform: translateY(-50%); }
+.vl { position: absolute; left: 73%; right: 2%; transform: translateY(-50%); display: flex; flex-direction: column; gap: 4px; align-items: flex-start; }
+.vl-n { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--am-muted); }
+.vl-t { font-family: var(--font-display); font-size: clamp(13px, 1.5vw, 18px); font-weight: 600; color: var(--am-white); line-height: 1.25; letter-spacing: -0.005em; }
+.vision-legend { display: none; list-style: none; padding: 0; margin: 20px 0 0; }
+.vision-legend li { display: flex; flex-direction: column; gap: 4px; align-items: flex-start; padding: 14px 0; border-top: 1px solid var(--am-border-faint); }
+@media (max-width: 760px) { .vl, .vl-line { display: none; } .vision-legend { display: block; } }
