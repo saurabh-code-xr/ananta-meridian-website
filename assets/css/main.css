@@ -1881,3 +1881,8 @@ section { position: relative; }
 .team-body { padding: clamp(24px, 3vw, 32px); }
 @media (max-width: 1024px) { .team-grid { grid-template-columns: 1fr; } }
 @media (max-width: 560px) { .team-card { grid-template-columns: 1fr; } .team-photo { min-height: 240px; } }
+
+/* Hero environments row */
+.hero-envs { display: flex; flex-wrap: wrap; gap: 8px 0; list-style: none; padding: 0; margin: 40px 0 0; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--am-steel); }
+.hero-envs li { display: flex; align-items: center; }
+.hero-envs li + li::before { content: ''; width: 4px; height: 4px; border-radius: 50%; background: var(--am-cyan); margin: 0 14px; }
